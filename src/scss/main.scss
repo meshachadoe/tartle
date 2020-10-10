@@ -1,0 +1,71 @@
+@import './base.scss';
+
+.main {
+	display: flex;
+	flex-direction: row;
+	margin: 3vh 0vw;
+}
+
+.editor {
+	margin-left: 1.5vw;
+	display: grid;
+	height: 70vh;
+	width: 30vh;
+	grid-template-rows: 1fr 14fr 2fr;
+	flex-direction: column;
+	border-radius: 20px;
+	&::before {
+		content: 'tartle.code';
+		font-family: 'Archive';
+		font-size: 0.8rem;
+		padding: 10px 10px;
+		background-color: #787676;
+	}
+	> button {
+		margin-top: 10px;
+		border-radius: 10px;
+		font-size: 1.4rem;
+		background-color: #84dccf;
+		border: none;
+		outline: none;
+	}
+}
+
+.editor-code {
+	display: grid;
+	grid-template-columns: 2fr 8fr;
+	pre {
+		outline: none;
+		border: none;
+		background-color: #fff;
+		line-height: 150%;
+		font-family: 'DM Mono', monospace;
+		font-size: 0.8rem;
+	}
+	mark {
+		background: #84dccf;
+		display: block;
+		font-family: 'DM Mono', monospace;
+		font-size: 0.8rem;
+	}
+	.code-number {
+		text-align: center;
+		color: #e9e9e9;
+		background-color: #f1f1f1;
+	}
+	.code-text {
+		color: #000;
+		font-size: 0.8rem;
+		white-space: pre-wrap;
+		word-break: keep-all;
+	}
+}
+
+.canvas {
+	margin-left: 2vw;
+	height: 100%;
+	width: 70vh;
+	height: 70vh;
+	background-color: #fff;
+	border-radius: 5px;
+}

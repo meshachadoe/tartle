@@ -1,0 +1,10 @@
+@import './base.scss';
+
+.navbar {
+	height: 10vh;
+	display: flex;
+	align-items: flex-end;
+	padding-bottom: 10px;
+	border-bottom: 4px solid #fff;
+	font-size: 0.8rem;
+}

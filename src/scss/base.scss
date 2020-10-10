@@ -1,0 +1,31 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-family: monospace;
+}
+
+body {
+	background-color: #312f2f;
+	color: #fff;
+}
+
+@font-face {
+	font-family: 'Archive';
+	src: url('./Archive.otf') format('opentype');
+}
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono&display=swap');
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button {
+	font-family: 'Archive';
+	letter-spacing: 0.1rem;
+}
+
+p {
+	font-family: 'DM Mono', monospace;
+}
