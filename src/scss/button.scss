@@ -1,5 +1,9 @@
 @import './base.scss';
 
+button {
+	cursor: pointer;
+}
+
 .button-group {
 	display: flex;
 	flex-direction: column;
@@ -16,7 +20,7 @@
 			width: auto;
 		}
 		&:hover {
-			background-color: #62a198;
+			background-color: #6fb6ab;
 		}
 	}
 }
@@ -33,5 +37,6 @@
 	opacity: 100%;
 	&:hover {
 		opacity: 100%;
+		background-color: #6fb6ab;
 	}
 }
