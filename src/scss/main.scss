@@ -1,77 +1,94 @@
-@import './base.scss';
+@import "./base.scss";
 
 .main {
-	display: flex;
-	flex-direction: row;
-	margin: 3vh 0vw;
+  display: flex;
+  flex-direction: row;
+  margin: 3vh 0vw;
 }
 
 .editor {
-	margin-left: 1.5vw;
-	display: grid;
-	height: 70vh;
-	width: 30vh;
-	grid-template-rows: 1fr 14fr 2fr;
-	flex-direction: column;
-	border-radius: 50px;
-	> h2 {
-		font-family: 'Archive';
-		font-size: 0.8rem;
-		padding: 10px 10px;
-		background-color: #787676;
-		border-radius: 10px 10px 0 0;
-	}
-	> button {
-		margin-top: 10px;
-		border-radius: 10px;
-		font-size: 1.4rem;
-		background-color: #84dccf;
-		border: none;
-		outline: none;
-		cursor: pointer;
-		&:hover {
-			background-color: #6fb6ab;
-		}
-	}
+  margin-left: 1.5vw;
+  display: grid;
+  height: 70vh;
+  width: 30vh;
+  grid-template-rows: 1fr 14fr 2fr;
+  flex-direction: column;
+  border-radius: 50px;
+  > h2 {
+    font-family: "Archive";
+    font-size: 0.8rem;
+    padding: 10px 10px;
+    background-color: #787676;
+    border-radius: 10px 10px 0 0;
+  }
+  > button {
+    margin-top: 10px;
+    border-radius: 10px;
+    font-size: 1.4rem;
+    background-color: #84dccf;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    &:hover {
+      background-color: #6fb6ab;
+    }
+  }
 }
 
 .editor-code {
-	display: grid;
-	grid-template-columns: 2fr 8fr;
-	pre {
-		outline: none;
-		border: none;
-		background-color: #fff;
-		line-height: 150%;
-		font-family: 'DM Mono', monospace;
-		font-size: 0.8rem;
-	}
-	mark {
-		background: #84dccf;
-		display: block;
-		font-family: 'DM Mono', monospace;
-		font-size: 0.8rem;
-	}
-	.code-number {
-		text-align: center;
-		color: #e9e9e9;
-		background-color: #f1f1f1;
-		border-radius: 0 0 0 10px;
-	}
-	.code-text {
-		color: #000;
-		font-size: 0.8rem;
-		white-space: pre-wrap;
-		word-break: keep-all;
-		border-radius: 0 0 10px 0;
-	}
+  display: grid;
+  grid-template-columns: 2fr 8fr;
+  overflow-y: scroll;
+  pre {
+    outline: none;
+    border: none;
+    background-color: #fff;
+    line-height: 150%;
+    font-family: "DM Mono", monospace;
+    font-size: 0.8rem;
+  }
+  mark {
+    background: #84dccf;
+    display: block;
+    font-family: "DM Mono", monospace;
+    font-size: 0.8rem;
+  }
+  .code-number {
+    text-align: center;
+    color: #e9e9e9;
+    background-color: #f1f1f1;
+    border-radius: 0 0 0 10px;
+  }
+  .code-text {
+    color: #000;
+    font-size: 0.8rem;
+    white-space: pre-wrap;
+    word-break: keep-all;
+    border-radius: 0 0 10px 0;
+  }
+}
+
+.editor-code::-webkit-scrollbar {
+  display: none;
+}
+.editor-code {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.canvas-container {
+  position: relative;
+  margin-left: 1.5vw;
 }
 
 .canvas {
-	margin-left: 1.5vw;
-	height: 100%;
-	width: 70vh;
-	height: 70vh;
-	background-color: #fff;
-	border-radius: 10px;
+  height: 100%;
+  width: 70vh;
+  height: 70vh;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.canvas-container:hover .button-save {
+  opacity: 100%;
 }

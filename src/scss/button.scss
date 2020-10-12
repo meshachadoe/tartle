@@ -1,42 +1,43 @@
-@import './base.scss';
+@import "./base.scss";
 
 button {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 .button-group {
-	display: flex;
-	flex-direction: column;
-	button {
-		border: none;
-		outline: none;
-		height: 60px;
-		width: 60px;
-		border-radius: 8px;
-		background-color: #84dccf;
-		margin-bottom: 10px;
-		> img {
-			height: 40px;
-			width: auto;
-		}
-		&:hover {
-			background-color: #6fb6ab;
-		}
-	}
+  display: flex;
+  flex-direction: column;
+  button {
+    border: none;
+    outline: none;
+    height: 60px;
+    width: 60px;
+    border-radius: 8px;
+    background-color: #84dccf;
+    margin-bottom: 10px;
+    > img {
+      height: 40px;
+      width: auto;
+    }
+    &:hover {
+      background-color: #6fb6ab;
+    }
+  }
 }
 
 .button-save {
-	position: absolute;
-	right: 20vw;
-	bottom: 16vh;
-	border: none;
-	outline: none;
-	padding: 5px 8px;
-	border-radius: 5px;
-	background-color: #84dccf;
-	opacity: 100%;
-	&:hover {
-		opacity: 100%;
-		background-color: #6fb6ab;
-	}
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  border: none;
+  outline: none;
+  padding: 5px 8px;
+  border-radius: 5px;
+  background-color: #84dccf;
+  transition-duration: 200ms;
+  opacity: 0%;
+  &:hover {
+    background-color: #6fb6ab;
+    opacity: 100%;
+  }
 }

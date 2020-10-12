@@ -1,10 +1,22 @@
-@import './base.scss';
+@import "./base.scss";
 
 .navbar {
-	height: 10vh;
-	display: flex;
-	align-items: flex-end;
-	padding-bottom: 10px;
-	border-bottom: 4px solid #fff;
-	font-size: 0.8rem;
+  height: 10vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  border-bottom: 4px solid #fff;
+  font-size: 0.8rem;
+
+  h2 {
+    cursor: pointer;
+    opacity: 1;
+    transition-duration: 200ms;
+    user-select: none;
+  }
+
+  h2:hover {
+    opacity: 0.8;
+  }
 }
