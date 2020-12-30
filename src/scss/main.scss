@@ -9,7 +9,7 @@
 .editor {
   margin-left: 1.5vw;
   display: grid;
-  height: 70vh;
+  height: 500px;
   width: 30vh;
   grid-template-rows: 1fr 14fr 2fr;
   flex-direction: column;
@@ -51,20 +51,28 @@
     background: #84dccf;
     display: block;
     font-family: "DM Mono", monospace;
-    font-size: 0.8rem;
   }
   .code-number {
     text-align: center;
-    color: #e9e9e9;
+    color: #676767;
     background-color: #f1f1f1;
     border-radius: 0 0 0 10px;
   }
   .code-text {
     color: #000;
+    background-color: white;
     font-size: 0.8rem;
     white-space: pre-wrap;
     word-break: keep-all;
     border-radius: 0 0 10px 0;
+    padding-left: 8px;
+    font-family: "DM Mono", monospace;
+    line-height: 150%;
+    font-size: 0.8rem;
+  }
+
+  .code-text:focus {
+    outline: none;
   }
 }
 
@@ -83,12 +91,19 @@
 
 .canvas {
   height: 100%;
-  width: 70vh;
-  height: 70vh;
+  width: 500px;
+  height: 500px;
   background-color: #fff;
   border-radius: 10px;
 }
 
 .canvas-container:hover .button-save {
   opacity: 100%;
+}
+
+.turtle {
+  width: 10px;
+  height: 10px;
+  background-color: rgb(12, 196, 140);
+  position: absolute;
 }
