@@ -1,12 +1,17 @@
 import React, { useEffect, useRef, useState } from "react";
-
-const Turtle = ({ x, y }) => {
-  const size = 10;
+import TurtleImg from "../assets/turtle.png";
+const Turtle = ({ x, y, rot }) => {
+  const size = 30;
   return (
-    <div
+    <img
       className="turtle"
-      style={{ left: x - size / 2, top: y - size / 2 }}
-    ></div>
+      src={TurtleImg}
+      style={{
+        left: x - size / 2,
+        top: y - size / 2,
+        transform: `rotate(${rot}deg)`,
+      }}
+    />
   );
 };
 

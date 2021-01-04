@@ -8,7 +8,7 @@ const Canvas = ({ steps, setActiveLine }) => {
     x: 250,
     y: 250,
     angle: 0,
-    penDown: true
+    penDown: true,
   });
   const i = useRef(0);
 
@@ -85,7 +85,7 @@ const Canvas = ({ steps, setActiveLine }) => {
         width={500}
         height={500}
       ></canvas>
-      <Turtle x={turtle.x} y={turtle.y} />
+      <Turtle x={turtle.x} y={turtle.y} rot={turtle.angle} />
       <button className="button-save">Save Image</button>
     </div>
   );
